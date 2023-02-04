@@ -21,8 +21,10 @@
                 </div>
                 <div class="col-lg-7 col-md-6">
                     <div class="about-content" data-aos="fade-left" data-aos-delay="100">
-                        <h2>aaaaaaa</h2>
-                        <p>aaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    @foreach($items as $item) 
+                        <h2>{{$item->n_title}}</h2> 
+                        {{$item->n_detail}}
+                    @endforeach
                     </div>
                 </div>
             </div>

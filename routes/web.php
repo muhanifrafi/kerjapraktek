@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index')
     ->name('home');
 
-Route::resource('TmgeneralPackage', 'TmgeneralPackageController');
+Route::get('TmgeneralPackage', 'TmgeneralPackageController@index');
 
 Route::prefix('admin')
     ->namespace('Admin')

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\TmgeneralPackage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class TmgeneralPackageController extends Controller
 {
@@ -15,10 +16,7 @@ class TmgeneralPackageController extends Controller
      */
     public function index()
     {
-        $items = TmgeneralPackage::all();
-        return view('pages.intro', [
-            'items' -> $items
-        ]);
+        
     }
 
     /**
