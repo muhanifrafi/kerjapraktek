@@ -1,0 +1,33 @@
+<main id="main">
+    <div class="breadcrumb">
+        <div class="container d-flex align-items-center justify-content-end">
+            <?php
+                // if (isset($_SESSION['userid'])) {
+                //     $company = isset($_SESSION["company"]) ? $_SESSION["company"] : '';
+
+                //     require("customer_login.php");
+                // }
+            ?>
+        </div>
+    </div>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-5 col-md-6">
+                    <div class="about-img" data-aos="fade-right" data-aos-delay="100">
+                        <img src="{{ url('frontend/assets/img/about-img.jpg') }}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6">
+                    <div class="about-content" data-aos="fade-left" data-aos-delay="100">
+                        <h2>aaaaaaa</h2>
+                        <p>aaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section><!-- End About Section -->
+
+</main><!-- End #main -->

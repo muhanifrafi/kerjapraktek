@@ -1,0 +1,51 @@
+.nav-tabs {
+    border-bottom: none;
+}
+
+.aircraft-tittle {
+    margin-top: 40px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#myTabContent {
+    margin-top: 20px;
+}
+
+.mynav {
+    border-bottom: 1px solid darkblue;
+}
+
+.mynav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.mynav li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.mynav a {
+    display: block;
+    color: #444;
+    text-decoration: none;
+    padding: 7px 15px;
+    font-weight: bold;
+}
+
+.target {
+    margin-top: 5px;
+    position: absolute;
+    border-bottom: 4px solid transparent;
+    transform: translateX(-60px);
+}
+
+.mynav a,
+.target {
+    transition: all .35s ease-in-out;
+}

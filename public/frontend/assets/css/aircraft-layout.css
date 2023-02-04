@@ -1,0 +1,131 @@
+.nav-tabs {
+  border-bottom: none;
+}
+
+.aircraft-tittle {
+  margin-top: 40px;
+  color: #444;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#myTabContent {
+  margin-top: 20px;
+}
+
+
+
+/* aircraft Section
+--------------------------------*/
+#aircraft {
+  padding: 60px 0 40px 0;
+  background-color: #f5f8fd;
+}
+
+#aircraft row {
+  padding: 0;
+}
+
+#aircraft .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+#aircraft .box:hover {
+  transform: scale(1.1);
+}
+
+#aircraft .box img {
+  height: 69px;
+}
+
+#aircraft .icon {
+  margin: 0 auto 15px auto;
+  padding-top: 12px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+#aircraft .icon i {
+  font-size: 36px;
+  line-height: 1;
+}
+
+#aircraft .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#aircraft .title a {
+  color: #111;
+}
+
+#aircraft .box:hover .title a {
+  color: #000080;
+}
+
+#aircraft .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+#detailaircraft .modal-header {
+  border-bottom: none;
+}
+
+#ntitleaircraft {
+  font-weight: bold;
+}
+
+
+
+
+.mynav {
+  border-bottom: 1px solid darkblue;
+}
+
+.mynav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.mynav li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mynav a {
+  display: block;
+  color: #444;
+  text-decoration: none;
+  padding: 7px 15px;
+  font-weight: bold;
+}
+
+.target {
+  margin-top: 5px;
+  position: absolute;
+  border-bottom: 4px solid transparent;
+  z-index: -1;
+  transform: translateX(-60px);
+}
+
+.mynav a,
+.target {
+  transition: all .35s ease-in-out;
+}
