@@ -23,7 +23,7 @@
                     <div class="about-content" data-aos="fade-left" data-aos-delay="100">
                     @foreach($items as $item) 
                         <h2>{{$item->n_title}}</h2> 
-                        {{$item->n_detail}}
+                        {!! $item->n_detail !!}
                     @endforeach
                     </div>
                 </div>
