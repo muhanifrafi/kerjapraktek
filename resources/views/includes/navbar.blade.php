@@ -10,7 +10,7 @@
 
     <div class="menu-container">
         <div class="menu d-flex align-items-center justify-content-between">
-            <a href="" class="logo"><img class="img-fluid" src="assets/img/logo/ptdi.png" alt=""></a>
+            <a href="" class="logo"><img class="img-fluid" src="{{ url('frontend/assets/img/logo/ptdi.png') }}" alt="logoptdi"></a>
             <ul>
                 <li><a href="#">Customer</a>
                     <ul>
