@@ -15,7 +15,8 @@ class HomeController extends Controller
     public function index()
     {
         $items = DB::table('tmgeneral')->where('id',1)->get();
-        return view('layouts.home',compact('items'));
+        $sliders = DB::table('tmslide')->where('f_slide_stat',1)->get();
+        return view('layouts.home',compact('items','sliders'));
     }
 
     /**
