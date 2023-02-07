@@ -18,6 +18,31 @@ Route::get('/', 'HomeController@index')
 
 Route::get('TmgeneralPackage', 'TmgeneralPackageController@index');
 
+
+Route::get('certificate', 'CertificateController@index')
+    ->name('layouts.certificate.certificate');
+
+Route::get('fleet', 'FleetController@index')
+    ->name('layouts.status.fleet');
+
+Route::get('project', 'ProjectController@index')
+    ->name('layouts.status.project');
+
+
+Route::get('customer', 'CustomerController@index')
+    ->name('layouts.customer.customer');
+
+
+Route::get('statisfaction', 'StatisfactionController@index')
+    ->name('layouts.customer.statisfaction');    
+
+
+Route::get('gallery', 'GalleryController@index')
+    ->name('layouts.topbar.gallery');      
+
+
+
+
 Route::prefix('admin')
     ->namespace('Admin')
     ->group(function () {
