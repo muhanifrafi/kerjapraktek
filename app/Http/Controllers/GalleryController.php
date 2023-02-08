@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class GalleryController extends Controller
@@ -13,6 +14,10 @@ class GalleryController extends Controller
      */
     public function index(Request $request)
     {
+        $nama = "Gallery";
+        $background = "header3.jpg";
+        $titles = array("Gallery");
+
         return view('layouts.topbar.gallery');
     }
 
