@@ -15,9 +15,9 @@ class CertificateController extends Controller
      */
     public function index(Request $request)
     {
-        $nama = "Customers";
+        $nama = "Certificate";
         $background = "header3.jpg";
-        $titles = array("Customer","WorldWide Customer");
+        $titles = array("Certificate");
  
         return view('layouts.certificate.certificate');
     }
