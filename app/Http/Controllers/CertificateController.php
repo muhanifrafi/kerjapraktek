@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
 
 class CertificateController extends Controller
 {
@@ -13,6 +15,10 @@ class CertificateController extends Controller
      */
     public function index(Request $request)
     {
+        $nama = "Customers";
+        $background = "header3.jpg";
+        $titles = array("Customer","WorldWide Customer");
+ 
         return view('layouts.certificate.certificate');
     }
 
