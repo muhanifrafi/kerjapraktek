@@ -16,7 +16,7 @@ class CustomerController extends Controller
     {
         $nama = "Customer";
         $background = "header3.jpg";
-        $titles = array("Customer","WordlWide Customer");
+        $titles = array("Customer","WorldWide Customer");
         return view('layouts.customer.customer');
     }
 
