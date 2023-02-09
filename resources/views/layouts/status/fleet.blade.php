@@ -13,9 +13,6 @@
 
 				
 			<!-- PUT CONTENT HERE-->	
-      <div class="container">
-	<div class="row pad-row">
-	  <div class="col-md-12  col-sm-12">
 	  <div class="d-flex align-items-center justify-content-center vh-100x">
             <div class="text-center">
                 <h1 class="display-1 fw-bold">Under Construction</h1>
@@ -32,6 +29,6 @@
 </div>			    
   </section>
   </main>
-  
+
 @include('includes.footer')
 
