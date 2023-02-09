@@ -16,7 +16,7 @@ class StatisfactionController extends Controller
     {
         $nama = "Customer";
         $background = "header3.jpg";
-        $titles = array("Customer","Customer Statisfaction Survey");
+        $titles = array("Customer","Customer Satisfaction Survey");
 
         return view('layouts.customer.statisfaction');
     }
