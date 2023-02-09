@@ -13,18 +13,24 @@
 
 				
 			<!-- PUT CONTENT HERE-->	
-            @foreach 
-                <h2></h2>
-            <br><br/>
-                
-            @endforeach
-                </div>
-			  </div>
+      <div class="container">
+	<div class="row pad-row">
+	  <div class="col-md-12  col-sm-12">
+	  <div class="d-flex align-items-center justify-content-center vh-100x">
+            <div class="text-center">
+                <h1 class="display-1 fw-bold">Under Construction</h1>
+                <!-- <p class="fs-3"> <span class="text-danger">Opps!</span> Page not found.</p> -->
+				<img src="{[ url('frontend/assets/img/page.png')}}" alt="image page not found">		
+				
+                <p class="lead">
+                    This page is currently unavailable. <br> You can come back later. Thank you for coming
+                  </p>
+                <a href="{{route('home'}}" class="btn btn-primary">Go Home</a><br>	
             </div>
-         </section>
-
-  
+        </div>
+	</div>			  
+</div>			    
   </section>
-  </main>	
+  </main>
 
 @include('includes.footer')
