@@ -40,7 +40,8 @@ Route::get('statisfaction', 'StatisfactionController@index')
 Route::get('gallery', 'GalleryController@index')
     ->name('layouts.topbar.gallery');      
 
-
+Route::get('sb', 'ServiceBulletinController@index')
+    ->name('layouts.services.sb');    
 
 
 Route::prefix('admin')
