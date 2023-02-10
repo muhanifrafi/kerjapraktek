@@ -16,10 +16,10 @@ class CertificateController extends Controller
     public function index(Request $request)
     {
         $nama = "Certificate";
-        $background = "header3.jpg";
+        $background = "header4.jpg";
         $titles = array("Certificate");
- 
-        return view('layouts.certificate.certificate');
+        $certificates = DB::table('tmgeneral')->where('id',4)->get();
+        return view('layouts.certificate.certificate'compact('certificates','nama','background','titles'));
     }
 
     /**
