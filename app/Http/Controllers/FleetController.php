@@ -15,10 +15,10 @@ class FleetController extends Controller
     public function index(Request $request)
     {
         $nama = "Status";
-        $background = "header3.jpg";
+        $background = "header2.jpg";
         $titles = array("Status","Fleet");
 
-        return view('layouts.status.fleet');
+        return view('layouts.status.fleet',compact('orders','nama','background','titles'));
     }
 
     /**
