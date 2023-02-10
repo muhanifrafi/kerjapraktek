@@ -17,8 +17,8 @@ class FleetController extends Controller
         $nama = "Status";
         $background = "header2.jpg";
         $titles = array("Status","Fleet");
-
-        return view('layouts.status.fleet',compact('orders','nama','background','titles'));
+        $atatus = DB::table('tmgeneral')->where('id',4)->get();
+        return view('layouts.status.fleet',compact('status','nama','background','titles'));
     }
 
     /**
