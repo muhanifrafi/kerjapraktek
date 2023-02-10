@@ -15,10 +15,10 @@ class ProjectController extends Controller
     public function index(Request $request)
     {
         $nama = "Status";
-        $background = "header3.jpg";
+        $background = "header2.jpg";
         $titles = array("Status","Project");
-
-        return view('layouts.status.project');
+        $project = DB::table('tmgeneral')->where('id',4)->get();
+        return view('layouts.status.project',compact('project','nama','background','titles'));
     }
 
     /**
