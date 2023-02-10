@@ -43,6 +43,8 @@ Route::get('gallery', 'GalleryController@index')
 Route::get('sb', 'ServiceBulletinController@index')
     ->name('layouts.services.sb');    
 
+Route::get('loap', 'LoapIndexController@index')
+    ->name('layouts.services.loap');    
 
 Route::prefix('admin')
     ->namespace('Admin')
