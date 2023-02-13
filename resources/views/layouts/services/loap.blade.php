@@ -23,7 +23,7 @@
 
 <body>
 	
-<table id="example" class="table table-striped" style="width:100%">
+<table id="example" class="table table-striped" style="width:50%">
         <thead>
             <tr>
                 <th>Name</th>
