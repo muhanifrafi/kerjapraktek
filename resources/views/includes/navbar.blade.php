@@ -56,6 +56,14 @@
                         </li>
                         <li>
                             <p>Training</p>
+                                                        <ul>
+                                                                    <!-- echo "<li><a href=\"training_detail-" . $objtmcust_training_detail->getid() . "-" . $objtmcustomer_training->getn_title() . "\">" . $objtmcustomer_training->getn_title() . "</a></li>\n"; -->
+                                    <li><a href="n219_training">N219 Training</a></li>
+                                                                    <!-- echo "<li><a href=\"training_detail-" . $objtmcust_training_detail->getid() . "-" . $objtmcustomer_training->getn_title() . "\">" . $objtmcustomer_training->getn_title() . "</a></li>\n"; -->
+                                    <li><a href="cn235_training">CN235 Training</a></li>
+                                                                    <!-- echo "<li><a href=\"training_detail-" . $objtmcust_training_detail->getid() . "-" . $objtmcustomer_training->getn_title() . "\">" . $objtmcustomer_training->getn_title() . "</a></li>\n"; -->
+                                    <li><a href="nc212i_training">NC212i Training</a></li>
+                                                            </ul>
                             <ul>
                                 <?php
                                     // $limit = "";
@@ -126,16 +134,31 @@
                                 //     echo "</ul>\n";
                                 // }
                             ?>
+                    <ul>
+<li><a href="#">Aircraft</a>
+  <ul class="editable-list">
+<li><a href="maintenance">Maintenance</a></li>
+<li><a href="refurbishment">Refurbishment Interior</a></li>
+<li><a href="repainting">Repainting</a></li>
+  </ul>
+</li>
+<li><a href="engine">Engine</a></li>
+<li><a href="component">Component</a></li>
+<li><a href="specialized_services">Specialized Services (NDT)</a></li>
+<li><a href="modification">Modification</a></li>
+</ul>
+							
+							
                         </li>
                     </ul>
                 </li>
                 <li><a href="#">Status</a>
                     <ul>
-                        <li><a href="undercons">Fleet</a></li>
-                        <li><a href="undercons">Project</a></li>
+                        <li><a href="fleet">Fleet</a></li>
+                        <li><a href="project">Project</a></li>
                     </ul>
                 </li>
-                <li><a href="certificate">Certificates</a></li>
+                <li><a href="certificates">Certificates</a></li>
             </ul>
         </div>
     </div>
