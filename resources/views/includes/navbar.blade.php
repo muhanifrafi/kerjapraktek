@@ -40,8 +40,8 @@
                                 <li>
                                     <a>Aircraft Manuals</a>
                                     <ul class="editable-list">
-                                        <li><a href="loap+index">Loap Index</a></li>
-                                        <li><a href="sb+index">SB Index</a></li>
+                                        <li><a href="{{ route('layouts.services.loap')}}">Loap Index</a></li>
+                                        <li><a href="{{ route('layouts.services.sb') }}">SB Index</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="ietm">IETM</a></li>
@@ -154,11 +154,11 @@
                 </li>
                 <li><a href="#">Status</a>
                     <ul>
-                        <li><a href="fleet">Fleet</a></li>
-                        <li><a href="project">Project</a></li>
+                        <li><a href="{{route('layouts.status.fleet')}}">Fleet</a></li>
+                        <li><a href="{{route('layouts.status.project')}}">Project</a></li>
                     </ul>
                 </li>
-                <li><a href="certificates">Certificates</a></li>
+                <li><a href="{{ route('layouts.certificate.certificate')}}">Certificates</a></li>
             </ul>
         </div>
     </div>

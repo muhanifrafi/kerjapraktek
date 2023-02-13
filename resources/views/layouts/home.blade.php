@@ -23,7 +23,7 @@
         <div class="container d-flex justify-content-end">
             <div class="social-links">
                 <a href="{{ route('home') }}" class="login"><i class="fa fa-home"></i> Home</a>
-                <a href="gallery" class="login"><i class="fa fa-image"></i> Gallery</a>
+                <a href="{{ route('layouts.topbar.gallery') }}" class="login"><i class="fa fa-image"></i> Gallery</a>
                 <a href="footer" class="login"><i class="fa fa-address-book"></i> Contact Us</a>
 
                 <!-- Button trigger modal -->

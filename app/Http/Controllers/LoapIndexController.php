@@ -12,7 +12,7 @@ class LoapIndexController extends Controller
     $nama = "Service";
     $background = "header3.jpg";
     $titles = array("Services","Manuals","Aircraft Manuals","Loap Index");
-    $loap = DB::table('trloap')->where('id',1)->get();
+    $loap = DB::table('trloap')->where('i_id_loap',1)->get();
     return view('layouts.services.loap',compact('loap','nama','background','titles'));
     }
 }

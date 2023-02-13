@@ -25,7 +25,7 @@
 
                     <div class="form-row py-4">
                         <div class="col">
-                        <select class="form-control" name="aircraft">
+                        <select class="form-control" name="ac">
                                 <option value="">Aircraft</option>
                                 <option value="NC212-220">NC212-220</option>
                                 <option value="C295">C295</option>

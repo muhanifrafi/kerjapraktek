@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Models\ServiceBulletin;
-
+use Illuminate\Http\Request;
 class ServiceBulletinController extends Controller
 {
     public function index()
