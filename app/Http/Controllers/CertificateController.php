@@ -19,7 +19,7 @@ class CertificateController extends Controller
         $background = "header4.jpg";
         $titles = array("Certificate");
         $certificates = DB::table('tmgeneral')->where('id',4)->get();
-        return view('layouts.certificate.certificate'compact('certificates','nama','background','titles'));
+        return view('layouts.certificate.certificate',compact('certificates','nama','background','titles'));
     }
 
     /**
