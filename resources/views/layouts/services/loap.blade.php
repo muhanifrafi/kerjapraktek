@@ -21,14 +21,8 @@
 <script  src="https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>
 
 
-
-<section >
-            <div class="container">
-              <div class="row pad-row">
-                <div class="col-md-12  col-sm-12">
-
-				
-			<!-- PUT CONTENT HERE-->	
+<body>
+	
 <table id="example" class="table table-striped" style="width:100%">
         <thead>
             <tr>
@@ -78,11 +72,12 @@
 
 </tfoot>
 </table>
-         </section>
+
+</body>
+
 
   
-  </section>
-  </main>	
+
 
 <script>
 $(document).ready(function () {
