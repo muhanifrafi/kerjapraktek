@@ -48,9 +48,9 @@
             </div>
         </div>
     </div>
-    
-    <!-- ======= Header ======= -->
-                <section id="header-page" class="clearfix" style="">
+
+<!-- ======= Header ======= -->
+<section id="header-page" class="clearfix" style="">
     <div class="containerx block d-flex align-items-center justify-content-center" style="background-image:url(http://127.0.0.1:8000/frontend/assets/img/header/images_header/header6.jpg);background-position:left bottom;filter: brightness(50%);">
       <p class="header-title" style="filter: brightness(100%);"> </p>
     </div>
