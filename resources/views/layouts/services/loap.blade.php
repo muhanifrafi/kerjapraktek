@@ -22,54 +22,24 @@
 
 
 <body>
-	
-<table id="example" class="table table-striped" style="width:50%">
+<h2> Loap Index</h2>
+<table id="example" class="table table-striped" style="width:50%;margin-left:auto;margin-right:auto;">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
+                <th>No</th>
+                <th>ABB</th>
+                <th>Manual Title</th>
             </tr>
         </thead>
         <tbody>
+        @foreach ($loap as $loap)
             <tr>
-                <td>Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td>61</td>
-                <td>2011-04-25</td>
-                <td>$320,800</td>
+                <td>{{ $loap->i_id_loap }}</td>
+                <td>{{ $loap->n_loap_abbr }}</td>
+                <td>{{ $loap->e_loap_abbr }}</td>
+                </td>
             </tr>
-            <tr>
-                <td>Garrett Winters</td>
-                <td>Accountant</td>
-                <td>Tokyo</td>
-                <td>63</td>
-                <td>2011-07-25</td>
-                <td>$170,750</td>
-            </tr>
-            <tr>
-                <td>Ashton Cox</td>
-                <td>Junior Technical Author</td>
-                <td>San Francisco</td>
-                <td>66</td>
-                <td>2009-01-12</td>
-                <td>$86,000</td>
-            </tr>
-</tbody>
-<tfoot>
-  <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
-</tr>
-
+        @endforeach
 </tfoot>
 </table>
 
