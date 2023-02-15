@@ -18,7 +18,7 @@ class StocksController extends Controller
         $nama = "Service";
         $background = "header3.jpg";
         $titles = array("Services","Spare Parts","Stocks")
-        $stocks = DB::table('tmgeneral')->where('id',4)->get();
+        $stocks = DB::table('tmstock')->where('id',4)->get();
         return view('layouts.services.spare_parts.stocks',compact('stocks','nama','background','titles'));
     }
 

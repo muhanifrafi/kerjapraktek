@@ -59,6 +59,36 @@
                                 </div>
                             </div>
                         </div>
+                        <table class="table table-hover mt-2">
+    <thead>
+      <tr>
+        <th>Id.</th>
+        <th>Service Bulletin</th>
+        <th>Title</th>
+        <th>Revision</th>
+        <th>Rev. date</th>
+        <th>Category</th>
+        <th>Effectivity</th>
+      </tr>
+    </thead>
+    <tbody>
+        @foreach ($sb as $sb)
+            <tr>
+                <td>{{ $sb->id }}</td>
+                <td>{{ $sb->n_no }}</td>
+                <td>{{ $sb->n_title }}</td>
+                <td>{{ $sb->n_rev }}</td>
+                <td>{{ $sb->e_rev_date }}</td>
+                <td>{{ $sb->e_categ }}</td>
+                <td>{{ $sb->e_effectivity }}</td>
+                </td>
+            </tr>
+        @endforeach
+        </td>
+        </tr>
+    </tbody>
+</table>
+<div class="pagination pull-right"> 111 entries <span class="fa fa-gear"></span> Page 1 of 12 <span class="fa fa-fighter-jet"></span><span class="disabled">« previous</span><span class="current">1</span><a href="#" onclick="goPage('module/service_bulletin/service_bulletin-index.php?idac=&amp;e_categ=&amp;cat=&amp;s=&amp;saring=','2')">2</a><a href="#" onclick="goPage('module/service_bulletin/service_bulletin-index.php?idac=&amp;e_categ=&amp;cat=&amp;s=&amp;saring=','3')">3</a><a href="#" onclick="goPage('module/service_bulletin/service_bulletin-index.php?idac=&amp;e_categ=&amp;cat=&amp;s=&amp;saring=','4')">4</a><a href="#" onclick="goPage('module/service_bulletin/service_bulletin-index.php?idac=&amp;e_categ=&amp;cat=&amp;s=&amp;saring=','5')">5</a><a href="#" onclick="goPage('module/service_bulletin/service_bulletin-index.php?idac=&amp;e_categ=&amp;cat=&amp;s=&amp;saring=','6')">6</a><a href="#" onclick="goPage('module/service_bulletin/service_bulletin-index.php?idac=&amp;e_categ=&amp;cat=&amp;s=&amp;saring=','7')">7</a><a href="#" onclick="goPage('module/service_bulletin/service_bulletin-index.php?idac=&amp;e_categ=&amp;cat=&amp;s=&amp;saring=','8')">8</a><a href="#" onclick="goPage('module/service_bulletin/service_bulletin-index.php?idac=&amp;e_categ=&amp;cat=&amp;s=&amp;saring=','9')">9</a><a href="#" onclick="goPage('module/service_bulletin/service_bulletin-index.php?idac=&amp;e_categ=&amp;cat=&amp;s=&amp;saring=','10')">10</a><a href="#" onclick="goPage('module/service_bulletin/service_bulletin-index.php?idac=&amp;e_categ=&amp;cat=&amp;s=&amp;saring=','11')">11</a><a href="#" onclick="goPage('module/service_bulletin/service_bulletin-index.php?idac=&amp;e_categ=&amp;cat=&amp;s=&amp;saring=','12')">12</a><a href="#" onclick="goPage('module/service_bulletin/service_bulletin-index.php?idac=&amp;e_categ=&amp;cat=&amp;s=&amp;saring=','2')">next »</a></div>
                     </div>
                 </form>
 

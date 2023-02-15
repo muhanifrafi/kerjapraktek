@@ -12,7 +12,7 @@ class ServiceBulletinController extends Controller
         $nama = "Service";
         $background = "header3.jpg";
         $titles = array("Services","Manuals","Aircraft Manuals","SB Index");
-        $sb = DB::table('tmservice_bulletin')->where('id',1)->get();
+        $sb = DB::table('tmservice_bulletin')->get();
         return view('layouts.services.sb',compact('sb','nama','background','titles'));
     }
 }
