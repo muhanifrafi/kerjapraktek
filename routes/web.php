@@ -46,6 +46,9 @@ Route::get('sb_index', 'ServiceBulletinController@index')
 Route::get('loap_index', 'LoapIndexController@index')
     ->name('layouts.services.loap');    
 
+Route::get('stocks', 'StocksController@index')
+    ->name('layouts.services.spare_parts.stocks'); 
+
 Route::prefix('admin')
     ->namespace('Admin')
     ->group(function () {

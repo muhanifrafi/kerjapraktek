@@ -59,6 +59,14 @@
                                 </div>
                             </div>
                         </div>
+                </div>
+                        <div class="d-flex pb-4">
+	<h4><span class="badge badge-success">Aircraft: All</span> <span class="fa fa-arrow-right"></span> </h4>&nbsp;
+	<h4><span class="badge badge-warning">Category : </span> <span class="fa fa-arrow-right"></span> </h4>&nbsp;
+	<h4><span class="badge badge-info">Search by : </span> <span class="fa fa-arrow-right"></span> </h4>&nbsp;
+	<h4><span class="badge badge-primary">Key : </span> <span class="fa fa-arrow-right"></span>
+	</h4>&nbsp;
+</div>
                         <table class="table table-hover mt-2">
     <thead>
       <tr>
