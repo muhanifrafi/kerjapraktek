@@ -209,7 +209,8 @@ $(function(){
 <div class="row"> <div class="col-12" id="detailform"> </div> <!-- START:ChartJS 08 MARET 2021--> <!-- START:ChartJS 08 MARET 2021--> </div> </div> </div> </div> </div>
 <script> $(document).ready(function(){ $('.view_data').click(function(){ var idstock = $(this).attr("idstock"); //var nac = "A/C Type : "+$(this).attr("nac"); //alert(idac); $.ajax({ url:"module/stock/form_rfq.php", method:"post", data:{id:idstock}, success:function(data){ //$('#ntitleaircraft').html(nac); $('#modstock').modal("show"); $('#detailform').html(data); } }); }); }); </script></div>
 <div id="popupView"></div> 
-<!-- END CONTENT--> </div> </div> </div> </section>@include('includes.footer')
+<!-- END CONTENT--> </div> </div> </div> </section>
+@include('includes.footer')
 
 
       <!-- Modal -->
@@ -268,5 +269,3 @@ $(function(){
             </div>
          </section>
 
-
-@include('includes.footer')
