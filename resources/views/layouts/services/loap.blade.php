@@ -21,47 +21,17 @@
 <script  src="https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>
 
 
-
-<section>
-	<div class="container">
-		<div class="row pad-row">
-			<div class="col-md-12  col-sm-12">
-
-
-				<!-- PUT CONTENT HERE-->
-				<script type='text/javascript'>
-					$(function() {
-						$("div#targetview").load("module/aircraft_manual/aircraft_manual-index.php");
-					});
-				</script>
-
-
-
-
 <body>
 <h2> Loap Index</h2>
-
-				<h3></h3>
-				<br>
-
-
-					<div class="d-flex justify-content-center p-4 ">
-						
-							<div class="col-9">
-								<div class="tab-content" id="v-pills-tabContent">
-									<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-										<table id="table_id" class="table table-striped table-bordered table-hover table-heading no-border-bottom">
-											<thead>
-
-												<th scope="col" style="text-align: center;" width="5%">No</th>
-												<th scope="col" style="text-align: center;" width="10%">ABB</th>
-												<th scope="col" style="text-align: center;" width="85%">Manual Title</th>
-
-											</thead>
-
-											<tbody id="the-list">
-
-
+<table id="example" class="table table-striped" style="width:50%;margin-left:auto;margin-right:auto;">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>ABB</th>
+                <th>Manual Title</th>
+            </tr>
+        </thead>
+        <tbody>
         @foreach ($loap as $loap)
             <tr>
                 <td>{{ $loap->i_id_loap }}</td>
@@ -73,24 +43,15 @@
 </tfoot>
 </table>
 
-</div>
-</div>
-</div>
-
-<div id="targetview"></div>
-
 </body>
 
-</section>  
 
-  </main>	
-<br />
   
 
 
 <script>
 $(document).ready(function () {
-    $('#table_id').DataTable(
+    $('#example').DataTable(
     );
 });
 </script>
