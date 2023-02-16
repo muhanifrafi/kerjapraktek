@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -14,11 +14,10 @@ class FleetController extends Controller
      */
     public function index(Request $request)
     {
-        $nama = "Status";
+        $nama = "Under Construction";
         $background = "header2.jpg";
-        $titles = array("Status","Fleet");
-        $atatus = DB::table('tmgeneral')->where('id',4)->get();
-        return view('layouts.status.fleet',compact('status','nama','background','titles'));
+        $titles = array("Under Construction");
+        return view('layouts.status.fleet',compact('nama','background','titles'));
     }
 
     /**

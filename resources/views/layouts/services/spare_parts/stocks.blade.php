@@ -54,7 +54,7 @@ $(function(){
   </center>
 <br>
 
-	a=1041			<table class="table table-striped table-bordered table-hover table-heading no-border-bottom" cellspacing="0" id="delTable">
+	<table class="table table-striped table-bordered table-hover table-heading no-border-bottom" cellspacing="0" id="delTable">
 	<thead>
 	
 	<tr><th scope="col" width="5%">Id.</th>

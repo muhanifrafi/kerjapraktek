@@ -17,12 +17,12 @@
             <div class="text-center">
                 <h1 class="display-1 fw-bold">Under Construction</h1>
                 <!-- <p class="fs-3"> <span class="text-danger">Opps!</span> Page not found.</p> -->
-				<img src="{[ url('frontend/assets/img/page.png')}}" alt="image page not found">		
+				<img src="{{ url('frontend/assets/img/page.png')}}" alt="image page not found">		
 				
                 <p class="lead">
                     This page is currently unavailable. <br> You can come back later. Thank you for coming
                   </p>
-                <a href="{{route('home'}}" class="btn btn-primary">Go Home</a><br>	
+                <a href="{{route('home')}}" class="btn btn-primary">Go Home</a><br>	
             </div>
         </div>
 	</div>			  
