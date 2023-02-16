@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -69,13 +68,11 @@
         <script src="tinymce/tinymce.js"></script>
 
 
-        <meta charset="utf-8">
-
-
+    </head>
     @include('includes.style')
-
-
-    </head><script  type="text/javascript">
+    
+    
+    <script  type="text/javascript">
     function nextQuest(id, id2, id3, id4, displaytr) {
         for (var x = 0; x < id; x++) {
             document.getElementById('part_' + x).style.display = "none";
@@ -299,7 +296,7 @@
         },
         success: function() {
             location.reload(true);
-            window.location.href = 'http://127.0.0.1/';
+            window.location.href = '/';
         },
         type: 'post',
         resetForm: false
@@ -322,7 +319,52 @@
         var selectWindow = window.open(url, 'Selection', 'left=' + leftc + ',top=' + topc + ', width=' + popW + ',height=' + popH + ',resizable=0,scrollbars=yes')
     }
 </script><body class="theme-red">
-
+    <!-- Page Loader
+    <div class="page-loader-wrapper" style="display:block">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div> -->
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <!-- <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="START TYPING...">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div> -->
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="header">
+                <a href="#"><img src="frontend\assets\statisfaction\images\logo_cs.png"></a>
+        </div>
+    </nav>
+    <section class="content">
+		<!-- CPU Usage -->
+	<div id="tableview">
+		<div class="row clearfix">			
+			<div class="col-xs-6 col-md-8">
+				<div class="card">
+					<img src="frontend\assets\statisfaction\images\utama.png" width="100%"/>                           
+				</div> 
+			</div>
 		
 			<div class="col-xs-6 col-md-4">
 				<div class="box">			
@@ -409,4 +451,3 @@
     </section>
 </body>
 </html>
-
